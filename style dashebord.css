@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #002;
+    display: flex;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+   border: 2px solid snow;
+}
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.menu{
+    background: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: all .7s ease;
+}
+.menu:hover{
+    width: 268px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: all .5s ease;
+    text-transform: capitalize;
+    
+}
+ul li a:hover , .active , .data-info .box:hover{
+    background: #ffffff55;
+    width: 100%;
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background: #a00;
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    padding: 10px;
+    background: #006eff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}.data-info .box{
+    background: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .5s ease;
+}.data-info .box i{
+    font-size: 40px;
+}.data-info .box .data{
+    text-align: center;
+}.data-info .box .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    /*ال بوردر سبايسينج بيتحكم في المسافات الي مبين العناصر بتاعتك*/
+    border-spacing: 5px;
+    
+}
+td , th{
+    background: #126;
+    height: 40px;
+    border-radius: 8px;
+    transition: all .6s ease;
+}
+td:hover{
+    background: #ffffff55;
+    box-shadow: 5px 5px 5px rgb(255, 230, 0);
+}
+th{
+    background: #ae00ff;
+}
+span{
+    padding: 6px;
+    border-radius: 8px;
+}
+.price{
+    background: #88ff00;
+    color: #0c9623;
+    transition: all .7s ease;
+}
+.price:hover{
+    box-shadow:5px 5px 10px #f500cc;
+}
+.count{
+    background: #ffee00;
+    color: #000;
+    transition: all .7s ease;
+}
+.count:hover{
+    box-shadow:5px 5px 10px rgb(0, 170, 133);
+}
